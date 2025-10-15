@@ -2,30 +2,122 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>夏休みの思い出</title>
+  <style>
+    body {
+      font-family: 'Kiwi Maru', serif;
+      background: #f6f1eb;
+      margin: 0;
+      padding: 0;
+      color: #3e3e3e;
+    }
+
+    header {
+      background-color: #d9cbb2;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #ffffff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .entry {
+      padding: 30px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .entry:last-child {
+      border-bottom: none;
+    }
+
+    .entry h2 {
+      margin-top: 0;
+      color: #6b4e2f;
+    }
+
+    .entry .date {
+      color: #999;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+    }
+
+    .entry img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ボタンでサイト移動</title>
 </head>
 <body>
+
+  <h1>1個目のサイト</h1>
+  <p>下のボタンを押すと修学旅行の思い出に飛びます</p>
+
+  <button onclick="location.href='https://bookish-garbanzo-v6w765p7g75wfw65v-5500.app.github.dev/second.html'">2個目のサイトへ</button>
+
+</body>
+</html>
+<body>
+
   <header>
-    <h1>日記</h1>
-    <p>思い出</p>
+    <h1>夏休みの思い出</h1>
   </header>
 
-  <section class="memory">
-    <h2>1. 友達とプール</h2>
-    <p>友達と休みにプールにいきました。泳げない友達が1人いたけど浮き輪があるおかげで全員楽しめました。</p>
-  </section>
+  <div class="container">
 
-  <section class="memory">
-    <h2>2.海 </h2>
-    <p class="caption">夏の海</p>
-    <p>三重で海にいきました。泳いだりはしなかったけどとても楽しかったです。奈良に海がないのでいつみてもいいなと思いました。</p>
-  </section>
+    <div class="entry">
+      <h2>プールに行った</h2>
+      <div class="date">2025年8月16日</div>
+      <p>
+        友達とファミリープールに行きました。<br>
+        ファミリープールにいってみんなで泳いでいたけど、子供が多くあまりちゃんと泳げなかった。<br>
+        売店のから揚げがおいしかった。プールで2時間ほど遊んで、その後にスポッチャに行きました。スポッチャでは4時間ほどいたんですが、2時間ぐらいはスポッチャの中にあるカラオケで遊んでいました。帰りは歩きで西大寺の駅まで歩いてとても足が痛くなりました。
+      </p>
+    </div>
 
-  <section class="memory">
-    <h2>3. 友達と夏祭り</h2>
-    <p class="caption">地元の夏祭りに行きました。</p>
-    <p>屋台で焼きそばやたこ焼きを食べました。幼いころに行ったこともあったので久しぶりにいって懐かしいなと感じました。</p>
-  </section>
+    <div class="entry">
+      <h2>消防署に学校の課題の職場体験的な感じで行きました。</h2>
+      <div class="date">2025年8月6日</div>
+      <img src="https://media.discordapp.net/attachments/1250383665968713728/1427994466005815417/IMG_0679.jpg?ex=68f0e2fb&is=68ef917b&hm=3a3e77480242924fb9ee1e75f64f58491b1ead0573c590b48dcef0706d77b459&=&format=webp&width=720&height=960" alt="休憩中の様子">
+      <p>
+        一緒に体験しに行く友達と行きました。<br>
+        3日間あり、特に印象に残ったのがホースを使った消火訓練です。<br>
+        水の反動が大きく、自分たちが3人で抑えているのが限界なところを、自分たちよりも小さい消防署の女性の方が一人でしていて凄いなと思いました。
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 思い出の日記
+  </footer>
 
 </body>
 </html>
